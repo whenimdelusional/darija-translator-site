@@ -295,6 +295,7 @@
   .demo-box::placeholder { color: #6E675C; }
   .demo-box:focus { border-color: var(--orange); }
   .demo-output { background: #F9F8F7; }
+  .demo-output.demo-msg { color: var(--muted); }
   .demo-actions {
     display: flex;
     gap: 12px;
@@ -988,8 +989,10 @@
       var match = lookup(rawInput) || lookup(expandedInput);
       if (match) {
         outputBox.value = match;
+        outputBox.classList.remove('demo-msg');
       } else {
-        outputBox.value = "This demo only carries a small sample \u2014 the full extension covers 30,000+ words and phrases. Add it to Chrome, it's free!";
+        outputBox.value = "This demo is just a preview\u2014download the free Chrome extension.";
+        outputBox.classList.add('demo-msg');
       }
     }
 
