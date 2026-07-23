@@ -985,37 +985,12 @@
       if (!rawInput) return;
       var expandedInput = normalizeInput(inputBox.value);
 
-      if (lookup(rawInput)) {
-        outputBox.value = lookup(rawInput);
-        return;
+      var match = lookup(rawInput) || lookup(expandedInput);
+      if (match) {
+        outputBox.value = match;
+      } else {
+        outputBox.value = "This demo only carries a small sample \u2014 the full extension covers 30,000+ words and phrases. Add it to Chrome, it's free!";
       }
-      if (lookup(expandedInput)) {
-        outputBox.value = lookup(expandedInput);
-        return;
-      }
-
-      var words = expandedInput.split(' ');
-      var result = [];
-      var i = 0;
-      while (i < words.length) {
-        var matched = false;
-        for (var len = words.length - i; len > 1; len--) {
-          var phrase = words.slice(i, i + len).join(' ');
-          var translation = lookup(phrase);
-          if (translation) {
-            result.push(translation);
-            i += len;
-            matched = true;
-            break;
-          }
-        }
-        if (!matched) {
-          var wordTranslation = lookup(words[i]);
-          result.push(wordTranslation || words[i]);
-          i++;
-        }
-      }
-      outputBox.value = result.join(' ');
     }
 
     translateBtn.addEventListener('click', translate);
