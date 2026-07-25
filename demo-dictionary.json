@@ -5,7 +5,7 @@
  "how are you": "labas 3lik",
  "how are you doing": "kidayr labas",
  "i am fine": "labas lhamdulillah",
- "thank you": "shokran",
+ "thank you": "shukran",
  "excuse me": "smeh liya",
  "i am sorry": "smeh liya",
  "what is your name": "shno smitk",
@@ -225,5 +225,18 @@
  "you're handsome": "nta zwin",
  "i do not understand": "mafhmtch",
  "i've": "3andi",
- "you've": "3andek"
+ "you've": "3andek",
+ "thanks": "shukran",
+ "lay7afdak": null,
+ "god bless you": "lay7afdak",
+ "may god protect you": "lay7afdak",
+ "bye": "bslama",
+ "goodbye": "bslama",
+ "i'm thirsty": "fiya l3tsh",
+ "i am thirsty": "fiya l3tsh",
+ "how far": "sh7al b3id",
+ "i don't eat meat": "ma kanakolch l7em",
+ "i do not eat meat": "ma kanakolch l7em",
+ "i don't speak arabic": "ma kanhderch l3rbiya",
+ "i do not speak arabic": "ma kanhderch l3rbiya"
 }
