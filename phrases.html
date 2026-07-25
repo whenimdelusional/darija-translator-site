@@ -68,17 +68,11 @@
   .cat-section { padding:44px 0 8px; scroll-margin-top:80px; }
   .cat-section h2 { font-size:clamp(24px,3vw,32px); letter-spacing:-.5px; margin:0 0 22px; }
   .phrase-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
-  .phrase { display:flex; align-items:center; justify-content:space-between; gap:12px;
+  .phrase { display:flex; align-items:center; gap:12px;
     background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:15px 18px; }
   .phrase-text { display:flex; flex-direction:column; gap:3px; min-width:0; }
   .phrase .en { font-size:14px; color:var(--muted); }
   .phrase .da { font-family:var(--font-serif); font-size:19px; color:var(--ink); }
-  .copy-btn { flex-shrink:0; width:38px; height:38px; display:flex; align-items:center; justify-content:center;
-    background:transparent; border:1px solid var(--border); border-radius:9px; color:var(--muted);
-    cursor:pointer; transition:all .18s ease; }
-  .copy-btn:hover { border-color:var(--orange); color:var(--orange); }
-  .copy-btn svg { width:17px; height:17px; }
-  .copy-btn.copied { background:var(--orange); border-color:var(--orange); color:#fff; }
 
   .cta-band { margin:72px 0 0; padding:56px 0; background:var(--peach-soft); text-align:center; }
   .cta-band h2 { font-size:clamp(26px,3.5vw,36px); letter-spacing:-.5px; margin:0 0 14px; }
@@ -121,6 +115,7 @@
     <nav>
       <a class="navlink" href="index.html">Home</a>
       <a class="navlink" href="index.html#faq">FAQ</a>
+      <a class="navlink" href="mailto:darijacollaborative@gmail.com">Contact</a>
       <a class="pill-cta" href="https://chromewebstore.google.com/detail/darija-translator/gfhpkokkjnkekbodomikodlgipeipfco">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24,2 A22,22 0 0,1 43.05,35 L35.26,30.5 A13,13 0 0,0 24,11 Z" fill="#EA4335"/><path d="M43.05,35 A22,22 0 0,1 4.95,35 L12.74,30.5 A13,13 0 0,0 35.26,30.5 Z" fill="#34A853"/><path d="M4.95,35 A22,22 0 0,1 24,2 L24,11 A13,13 0 0,0 12.74,30.5 Z" fill="#FBBC05"/><circle cx="24" cy="24" r="13" fill="#fff"/><circle cx="24" cy="24" r="8" fill="#4285F4"/></svg>
         Add to Chrome
@@ -133,7 +128,7 @@
   <div class="page-hero">
     <div class="wrap">
       <h1>Common Darija Phrases</h1>
-      <p>72 everyday phrases in <span class="lead-da">Darija</span> — Moroccan Arabic — with English translations. Tap any phrase to copy it.</p>
+      <p>72 everyday phrases in <span class="lead-da">Darija</span> — Moroccan Arabic — with English translations.</p>
     </div>
   </div>
 
@@ -155,75 +150,39 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="salam 3likom">
           <div class="phrase-text"><span class="en">hello</span><span class="da">salam 3likom</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy salam 3likom">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="salam">
           <div class="phrase-text"><span class="en">hi</span><span class="da">salam</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy salam">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="sbah lkhir">
           <div class="phrase-text"><span class="en">good morning</span><span class="da">sbah lkhir</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy sbah lkhir">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="tsbah 3la khir">
           <div class="phrase-text"><span class="en">good night</span><span class="da">tsbah 3la khir</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy tsbah 3la khir">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bslama">
           <div class="phrase-text"><span class="en">goodbye</span><span class="da">bslama</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bslama">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bslama">
           <div class="phrase-text"><span class="en">bye</span><span class="da">bslama</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bslama">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="marhba">
           <div class="phrase-text"><span class="en">welcome</span><span class="da">marhba</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy marhba">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="labas 3lik">
           <div class="phrase-text"><span class="en">how are you</span><span class="da">labas 3lik</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy labas 3lik">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="labas lhamdulillah">
           <div class="phrase-text"><span class="en">i&#x27;m fine</span><span class="da">labas lhamdulillah</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy labas lhamdulillah">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="shno smitk">
           <div class="phrase-text"><span class="en">what&#x27;s your name</span><span class="da">shno smitk</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy shno smitk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="smiti">
           <div class="phrase-text"><span class="en">my name is</span><span class="da">smiti</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy smiti">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="mtsharfin">
           <div class="phrase-text"><span class="en">nice to meet you</span><span class="da">mtsharfin</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy mtsharfin">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -233,63 +192,33 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="shukran">
           <div class="phrase-text"><span class="en">thank you</span><span class="da">shukran</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy shukran">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="3fak">
           <div class="phrase-text"><span class="en">please</span><span class="da">3fak</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy 3fak">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="la shukran 3la wajib">
           <div class="phrase-text"><span class="en">you&#x27;re welcome</span><span class="da">la shukran 3la wajib</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy la shukran 3la wajib">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="smeh liya">
           <div class="phrase-text"><span class="en">sorry</span><span class="da">smeh liya</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy smeh liya">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="smeh liya">
           <div class="phrase-text"><span class="en">excuse me</span><span class="da">smeh liya</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy smeh liya">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ma kayn moshkil">
           <div class="phrase-text"><span class="en">no problem</span><span class="da">ma kayn moshkil</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ma kayn moshkil">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ah">
           <div class="phrase-text"><span class="en">yes</span><span class="da">ah</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ah">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="la">
           <div class="phrase-text"><span class="en">no</span><span class="da">la</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy la">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="wakha">
           <div class="phrase-text"><span class="en">okay</span><span class="da">wakha</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy wakha">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="lay7afdak">
           <div class="phrase-text"><span class="en">god bless you</span><span class="da">lay7afdak</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lay7afdak">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -299,81 +228,42 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="fin kayn">
           <div class="phrase-text"><span class="en">where is</span><span class="da">fin kayn</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy fin kayn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bsh-hal">
           <div class="phrase-text"><span class="en">how much</span><span class="da">bsh-hal</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bsh-hal">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bsh-hal taman">
           <div class="phrase-text"><span class="en">how much is this</span><span class="da">bsh-hal taman</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bsh-hal taman">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bghit">
           <div class="phrase-text"><span class="en">i want</span><span class="da">bghit</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bghit">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="khassni">
           <div class="phrase-text"><span class="en">i need</span><span class="da">khassni</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy khassni">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="3awn">
           <div class="phrase-text"><span class="en">help</span><span class="da">3awn</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy 3awn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="fin l&#x27;mirhad">
           <div class="phrase-text"><span class="en">where is the bathroom</span><span class="da">fin l&#x27;mirhad</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy fin l&#x27;mirhad">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="lisr">
           <div class="phrase-text"><span class="en">left</span><span class="da">lisr</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lisr">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="liman">
           <div class="phrase-text"><span class="en">right</span><span class="da">liman</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy liman">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="nishan">
           <div class="phrase-text"><span class="en">straight</span><span class="da">nishan</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy nishan">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="7bes">
           <div class="phrase-text"><span class="en">stop</span><span class="da">7bes</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy 7bes">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="tweddret">
           <div class="phrase-text"><span class="en">i&#x27;m lost</span><span class="da">tweddret</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy tweddret">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="sh7al b3id">
           <div class="phrase-text"><span class="en">how far</span><span class="da">sh7al b3id</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy sh7al b3id">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -383,63 +273,33 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="lma">
           <div class="phrase-text"><span class="en">water</span><span class="da">lma</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lma">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="atay">
           <div class="phrase-text"><span class="en">tea</span><span class="da">atay</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy atay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="qahwa">
           <div class="phrase-text"><span class="en">coffee</span><span class="da">qahwa</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy qahwa">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="khobz">
           <div class="phrase-text"><span class="en">bread</span><span class="da">khobz</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy khobz">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="lmakla">
           <div class="phrase-text"><span class="en">food</span><span class="da">lmakla</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lmakla">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="jani ju3">
           <div class="phrase-text"><span class="en">i&#x27;m hungry</span><span class="da">jani ju3</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy jani ju3">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="fiya l3tsh">
           <div class="phrase-text"><span class="en">i&#x27;m thirsty</span><span class="da">fiya l3tsh</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy fiya l3tsh">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ldid">
           <div class="phrase-text"><span class="en">delicious</span><span class="da">ldid</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ldid">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="l-hisab">
           <div class="phrase-text"><span class="en">the bill</span><span class="da">l-hisab</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy l-hisab">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ma kanakolch l7em">
           <div class="phrase-text"><span class="en">i don&#x27;t eat meat</span><span class="da">ma kanakolch l7em</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ma kanakolch l7em">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -449,63 +309,33 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="kan7bk">
           <div class="phrase-text"><span class="en">i love you</span><span class="da">kan7bk</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy kan7bk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="tw7shtk">
           <div class="phrase-text"><span class="en">i miss you</span><span class="da">tw7shtk</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy tw7shtk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="zwina">
           <div class="phrase-text"><span class="en">beautiful</span><span class="da">zwina</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy zwina">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="mzyan">
           <div class="phrase-text"><span class="en">good</span><span class="da">mzyan</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy mzyan">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="mabrook">
           <div class="phrase-text"><span class="en">congratulations</span><span class="da">mabrook</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy mabrook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
-        <div class="phrase" data-darija="ischallah">
-          <div class="phrase-text"><span class="en">god willing</span><span class="da">ischallah</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ischallah">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
+        <div class="phrase" data-darija="inshallah">
+          <div class="phrase-text"><span class="en">god willing</span><span class="da">inshallah</span></div>
         </div>
         <div class="phrase" data-darija="ma kayn moshkil">
           <div class="phrase-text"><span class="en">no worries</span><span class="da">ma kayn moshkil</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ma kayn moshkil">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="mafhmtch">
           <div class="phrase-text"><span class="en">i don&#x27;t understand</span><span class="da">mafhmtch</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy mafhmtch">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="kathdar b l&#x27;ingleeziya">
           <div class="phrase-text"><span class="en">do you speak english</span><span class="da">kathdar b l&#x27;ingleeziya</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy kathdar b l&#x27;ingleeziya">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ma kanhderch l3rbiya">
           <div class="phrase-text"><span class="en">i don&#x27;t speak arabic</span><span class="da">ma kanhderch l3rbiya</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ma kanhderch l3rbiya">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -515,57 +345,30 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="lwalida">
           <div class="phrase-text"><span class="en">mother</span><span class="da">lwalida</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lwalida">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="lwalid">
           <div class="phrase-text"><span class="en">father</span><span class="da">lwalid</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lwalid">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="sa7b">
           <div class="phrase-text"><span class="en">friend</span><span class="da">sa7b</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy sa7b">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="khoya">
           <div class="phrase-text"><span class="en">brother</span><span class="da">khoya</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy khoya">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="khti">
           <div class="phrase-text"><span class="en">sister</span><span class="da">khti</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy khti">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="rajel">
           <div class="phrase-text"><span class="en">man</span><span class="da">rajel</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy rajel">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="mra">
           <div class="phrase-text"><span class="en">woman</span><span class="da">mra</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy mra">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="weld">
           <div class="phrase-text"><span class="en">boy</span><span class="da">weld</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy weld">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="bnt">
           <div class="phrase-text"><span class="en">girl</span><span class="da">bnt</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy bnt">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -575,51 +378,27 @@
       <div class="phrase-grid">
         <div class="phrase" data-darija="lyoum">
           <div class="phrase-text"><span class="en">today</span><span class="da">lyoum</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lyoum">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="ghdda">
           <div class="phrase-text"><span class="en">tomorrow</span><span class="da">ghdda</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy ghdda">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="lbara7">
           <div class="phrase-text"><span class="en">yesterday</span><span class="da">lbara7</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy lbara7">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="deba">
           <div class="phrase-text"><span class="en">now</span><span class="da">deba</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy deba">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="wa7d">
           <div class="phrase-text"><span class="en">one</span><span class="da">wa7d</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy wa7d">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="joj">
           <div class="phrase-text"><span class="en">two</span><span class="da">joj</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy joj">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="tlata">
           <div class="phrase-text"><span class="en">three</span><span class="da">tlata</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy tlata">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
         <div class="phrase" data-darija="sh7al f sa3a">
           <div class="phrase-text"><span class="en">what time is it</span><span class="da">sh7al f sa3a</span></div>
-          <button class="copy-btn" type="button" aria-label="Copy sh7al f sa3a">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -658,17 +437,6 @@
     if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('is-visible');});return;}
     var o=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');o.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
     els.forEach(function(e){o.observe(e);});
-  })();
-  (function(){
-    document.querySelectorAll('.copy-btn').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        var da=btn.closest('.phrase').dataset.darija;
-        navigator.clipboard.writeText(da).then(function(){
-          btn.classList.add('copied');
-          setTimeout(function(){btn.classList.remove('copied');},1200);
-        });
-      });
-    });
   })();
 </script>
 </body>
